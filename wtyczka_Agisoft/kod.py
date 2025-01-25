@@ -29,7 +29,6 @@ def get_photos(generate_dense_point_cloud, generate_model, save, downscale1):
     if chunk: 
         doc.remove(chunk)
         chunk = None
-    # if not chunk:
     chunk = doc.addChunk()
     photo_folder = app.getExistingDirectory("Please select the folder of photos to load.")
     if not photo_folder:
